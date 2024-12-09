@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    
+        <nav id="desktop-nav">
+            <div class="logo" style="font-style: italic; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Tanmay Chaturvedi</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Tanmay Chaturvedi</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+    
+    
+        <section id="profile">
+            <div class="profile-text">
+                <h2>Hello there, I'm Tanmay</h2>
+                <h1>Software Developer and Designer</h1>
+                <br />
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Résumé</button>
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+                </div>
+                <div class="icon-row">
+                    <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/in/tanmay43'">
+                    <img src="./assets/github.png" alt="Github profile" class="icon" onclick="location.href='https://github.com/tanmayc43'">
+                    <img src="./assets/leetcode.png" alt="Leetcode profile" class="icon" onclick="location.href='https://leetcode.com/u/tanmay43/'">
+                    <img src="./assets/codeforces.png" alt="Codeforces profile" class="icon" onclick="location.href='https://codeforces.com/profile/tyci'">
+                </div>
+            </div>
+
+            <div class="profile-pic-container">
+                <img src="./assets/profile-pic.png" alt="Tanmay Chaturvedi profile picture">
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-info">
+                <div class="education-heading-container">
+                    <h1>About Me</h1>
+                    <img class="icon education-icon" src="./assets/education.png" alt="Education Icon">
+                </div>
+                <br />
+                <div class="about-container">
+                    <div class="about-details"></div>
+                    <div class="about-text">
+                        <p>Currently a <strong>Sophomore</strong> at Indian Institute of Information Technology, Guwahati pursuing my <strong>B.Tech</strong> in <strong>Computer Science and Engineering</strong>.</p>
+                        <p>Interests include but are not limited to Competitive Programming, Machine learning, Linux, Cloud Computing, and Open Source Initiative.</p>
+                        <br />
+                        <p>Apart from the tech stuff, I'm also passionate about Astronomy, Football, F1, and (F)otography!</p>
+                        <p>I don't know what else to add right now so I'm adding 99 words of placeholder text. You're welcome to count them :p</p>
+                        <br />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempora sit et consequatur sunt error debitis quidem molestias, laborum amet! Earum fugiat deleniti vero ut a delectus, adipisci dolor atque iusto quisquam est libero placeat ab autem praesentium perspiciatis dicta non veniam aliquam mollitia. Dolorem, ipsum quos at perferendis suscipit quisquam quas id accusamus quidem vero voluptatem? Eius natus ut, obcaecati tempora eos mollitia, ex consequatur laborum distinctio libero id beatae qui quaerat repudiandae recusandae deserunt. Dolores provident, ullam obcaecati aliquid alias nostrum voluptates aliquam? Maxime natus doloremque rem quaerat esse totam, nam necessitatibus neque similique nihil impedit provident!</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
+        </section>
+
+        <section id="projects">
+            <div class="projects-heading-container">
+                <h1>Projects</h1>
+                <img class="icon projects-icon" src="./assets/projects.png" alt="Projects Icon">
+            </div>
+            <div class="projects-container">
+                <div class="project-item">
+                    <h2>GeniusiFY (<em>ongoing</em>)</h2>
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="location.href='https://github.com/tanmayc43/Geniusify'">Github</button>
+                    </div>
+                    <div class="project-description">
+                        <p>Building a Spotify statistics website using the <strong>Spotify API</strong> to display user data, including top tracks and artists. Integrating the <strong>Google Maps API</strong> to show real-time city music trends. The frontend is developed with <strong>React JS</strong>, and the backend uses <strong>NodeJS/Express</strong>, with OAuth 2.0 for authentication.</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <h2>Portfolio</h2>
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="location.href='https://github.com/tanmayc43/portfolio'">Github</button>
+                        <button class="btn btn-color-2" onclick="location.href='https://github.com/'">Live Demo</button>
+                    </div>
+                    <div class="project-description">
+                        <p>Created a responsive portfolio website using <strong>HTML, CSS & JavaScript</strong>. Integrated the <strong>NASA API</strong> to display the "Picture of the Day" with a dynamic description toggle. The website features smooth navigation and a contact form for users to reach out.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
+        </section>
+
+        <section id="contact">
+            <div class="contact-heading-container">
+                <h1>Contact</h1>
+                <img class="icon contact-icon" src="./assets/contact.png" alt="Contact Icon">
+            </div>
+
+            <div class="icon-row">
+                <img src="./assets/email.png" alt="Email Icon" class="clickable-icon" onclick="window.location.href='mailto:ctanmay043@gmail.com'">
+                <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="clickable-icon" onclick="window.location.href='https://www.linkedin.com/in/tanmay43/'">
+                <img src="./assets/github.png" alt="GitHub Icon" class="clickable-icon" onclick="window.location.href='https://github.com/tanmayc43'">
+            </div>
+        
+            <div class="contact-container">
+                <div class="contact-form-container">
+                    <form action="#" method="POST" class="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" placeholder="Enter your city" required>
+        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+                        <button type="submit" style="align-self: center;" class="btn btn-color-2">Submit</button>
+                    </form>
+                </div>
+        
+                <div class="nasa-api-container">
+                    <h2>NASA's Picture of the Day ‧₊˚✩彡</h2>
+                    <img id="nasa-image" src="" alt="NASA Picture of the Day" style="width: 100%; border-radius: 10px; margin-top: 1rem;">
+                    <p id="nasa-description"></p>
+                    <button id="toggle-text-btn" onclick="toggleDescription()">Show Description</button>
+                </div>
+            </div>
+        </section>
+    
+
+    <footer>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p style="text-align: center; font-style: oblique;">&copy; 2024 Tanmay Chaturvedi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
