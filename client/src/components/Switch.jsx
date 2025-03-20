@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const Switch = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleToggle = () => {
+    setIsChecked(!isChecked);
+  };
+
   return (
     <StyledWrapper>
       <label className="switch">
-        <input type="checkbox" />
+        <input 
+          type="checkbox" 
+          checked={isChecked}
+          onChange={handleToggle}
+        />
         <span className="slider" />
       </label>
     </StyledWrapper>
@@ -42,7 +52,7 @@ const StyledWrapper = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(0,181,226);
     transition: .5s;
     border-radius: 30px;
   }
@@ -56,7 +66,7 @@ const StyledWrapper = styled.div`
     left: var(--slider-offset,0.3em);
     top: 50%;
     transform: translateY(-50%);
-    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+    background: linear-gradient(40deg,#ff0080,#ffd700 70%);
     ;
    transition: .35s;
   }
