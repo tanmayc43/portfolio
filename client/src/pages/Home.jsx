@@ -1,13 +1,12 @@
-import Hero from '../components/Hero';
-import Navbar from '../components/Navbar';
+// import Hero from '../components/Hero';
+import Header from '../components/Header';
 import Footer from '../components/Footer';
-import exp from 'constants';
 
 const Home = () => {
     return(
         <div>
-            <Navbar />
-            <Hero />
+            <Header />
+            {/* <Hero /> */}
             <Footer />  
         </div>
     )
