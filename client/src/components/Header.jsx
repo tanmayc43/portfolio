@@ -18,7 +18,7 @@ export default function Header() {
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="/">
-            <h2 className="text-[32px] font-bold">tyci</h2>
+            <h2 className="text-[32px] font-bold font-sfmono tracking-tight">tyci</h2>
           </a>
           <div className="md:hidden">
             <button
@@ -62,12 +62,12 @@ export default function Header() {
             state ? "block" : "hidden"
           }`}
         >
-          <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+          <ul className="justify-center items-center space-y-7 md:flex md:space-x-9 md:space-y-0">
             {navigation.map((item, idx) => {
               return (
                 <li
                   key={idx}
-                  className="text-sm md:text-base font-medium text-black hover:text-gray-600 transition-all duration-300 hover:scale-105"
+                  className="text-sm md:text-base font-bold text-black hover:text-gray-600 transition-all duration-300 hover:scale-105"
                 >
                   <a href={item.path}>{item.title}</a>
                 </li>
