@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
+import { useTheme } from "@/components/theme-provider"
 
 const Switch = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   const handleToggle = () => {
-    setIsChecked(!isChecked);
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
@@ -13,7 +14,7 @@ const Switch = () => {
       <label className="switch">
         <input 
           type="checkbox" 
-          checked={isChecked}
+          checked={theme === "dark"}
           onChange={handleToggle}
         />
         <span className="slider" />

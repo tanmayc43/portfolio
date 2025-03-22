@@ -1,34 +1,49 @@
 import { Navbar } from "@material-tailwind/react";
 import { useState } from "react";
 import Switch from "./Switch";
+import Button from "./Button";
+import { useTheme } from "@/components/theme-provider";
 
 export default function Header() {
   const [state, setState] = useState(false);
+  const { theme } = useTheme();
 
   const navigation = [
-    { title: "Simple", path: "/simple" },
-    { title: "About", path: "/about" },
-    { title: "Projects", path: "/projects" },
-    { title: "Education", path: "/education" },
-    { title: "Contact Me", path: "/contact" },
+    { title: "Home", targetId: "home" },
+    { title: "About", targetId: "about" },
+    { title: "Projects", targetId: "projects" },
+    { title: "Education", targetId: "education" },
+    { title: "Contact", targetId: "contact" },
   ];
+
+  const scrollToSection = (targetId) => {
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setState(false); // Close mobile menu if open
+    }
+  };
 
   return (
     <nav className="w-full border-b md:border-0 md:static font-sfpro">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="/">
-            <h2 className="text-[32px] font-bold font-sfmono tracking-tight">tyci</h2>
+            <h2 className="text-[32px] font-bold font-sfmono tracking-tight text-black dark:text-white transition-colors duration-300">
+              tyci
+            </h2>
           </a>
           <div className="md:hidden">
-            <button
-              className="text-black outline-none p-2 rounded-md focus:border-gray-400 focus:border"
+            <Button
               onClick={() => setState(!state)}
+              variant={state ? "outline" : "default"}
+              size="icon"
+              className="text-black dark:text-white "
             >
               {state ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8"
+                  className="h-6 w-6"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -41,7 +56,7 @@ export default function Header() {
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8"
+                  className="h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -54,7 +69,7 @@ export default function Header() {
                   />
                 </svg>
               )}
-            </button>
+            </Button>
           </div>
         </div>
         <div
@@ -63,16 +78,15 @@ export default function Header() {
           }`}
         >
           <ul className="justify-center items-center space-y-7 md:flex md:space-x-9 md:space-y-0">
-            {navigation.map((item, idx) => {
-              return (
-                <li
-                  key={idx}
-                  className="text-sm md:text-base font-bold text-black hover:text-gray-600 transition-all duration-300 hover:scale-105"
-                >
-                  <a href={item.path}>{item.title}</a>
-                </li>
-              );
-            })}
+            {navigation.map((item, idx) => (
+              <li
+                key={idx}
+                className="text-sm md:text-base font-bold text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-400 transition-all duration-300 hover:scale-105 cursor-pointer"
+                onClick={() => scrollToSection(item.targetId)}
+              >
+                {item.title}
+              </li>
+            ))}
           </ul>
         </div>
         <div className="hidden md:inline-block">

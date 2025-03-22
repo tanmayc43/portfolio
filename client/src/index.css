@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --text: #000000;
+}
+
+:root[class~="dark"] {
+  --background: #000000;
+  --text: #ffffff;
+}
