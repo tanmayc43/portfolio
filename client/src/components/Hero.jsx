@@ -1,6 +1,7 @@
 import React from "react";
 import { LineShadowText } from "./magicui/line-shadow-text";
 import profilePic from "../assets/profile-pic.png";
+import { useTheme } from "@/components/theme-provider";
 
 export default function Hero() {
   const currentText = "Hello, I'm Tanmay";
@@ -8,14 +9,10 @@ export default function Hero() {
     <div id="home">
       <div className="flex flex-col md:flex-row items-center justify-center min-h-screen text-black dark:text-white px-4 md:px-0">
         <div className="flex flex-col items-center md:items-start justify-center w-full h-full px-4 md:px-20 text-center md:text-left -translate-y-20 md:-translate-y-24">
-          <div className="text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-6xl font-bold flex items-center gap-2 whitespace-nowrap">
-            <LineShadowText 
-              className="text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-6xl text-black dark:text-white"
-              shadowColor="currentColor"
-            >
-              {currentText}
-            </LineShadowText>
-          </div>
+          <h1 className="text-md sm:text-xl md:text-2xl font-extrabold  text-black dark:text-white transition-colors duration-300">
+            {currentText}
+          </h1>
+
           <h2 className="mt-2 text-sm sm:text-lg md:text-xl lg:text-2xl font-bold italic text-black dark:text-white transition-colors duration-300">
             Web Developer, CS Sophomore and an AI/ML Enthusiast
           </h2>

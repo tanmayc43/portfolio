@@ -1,13 +1,12 @@
-import { Navbar } from "@material-tailwind/react";
 import { useState } from "react";
+import { useTheme } from "./theme-provider"; // Use relative path
 import Switch from "./Switch";
-import Button from "./Button";
-import { useTheme } from "@/components/theme-provider";
+import Button from "./Button"; // Use your custom Button component
 
 export default function Header() {
   const [state, setState] = useState(false);
   const { theme } = useTheme();
-
+  
   const navigation = [
     { title: "Home", targetId: "home" },
     { title: "About", targetId: "about" },
@@ -19,7 +18,7 @@ export default function Header() {
   const scrollToSection = (targetId) => {
     const element = document.getElementById(targetId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       setState(false); // Close mobile menu if open
     }
   };
@@ -29,7 +28,7 @@ export default function Header() {
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <a href="/">
-            <h2 className="text-[32px] font-bold font-sfmono tracking-tight text-black dark:text-white transition-colors duration-300">
+            <h2 style={{color: theme === "dark" ? "white" : "black"}} className="text-[32px] font-bold font-sfmono tracking-tight transition-colors duration-300">
               tyci
             </h2>
           </a>
@@ -38,7 +37,7 @@ export default function Header() {
               onClick={() => setState(!state)}
               variant={state ? "outline" : "default"}
               size="icon"
-              className="text-black dark:text-white "
+              className="text-black dark:text-white"
             >
               {state ? (
                 <svg
