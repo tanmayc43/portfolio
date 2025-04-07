@@ -24,27 +24,6 @@ export const FlickeringGrid = ({
   const [isInView, setIsInView] = useState(false);
   const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
 
-  // Force redraw when color changes
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-
-    const { width, height } = canvas;
-    const gridParams = setupCanvas(canvas, width, height);
-    drawGrid(
-      ctx,
-      width,
-      height,
-      gridParams.cols,
-      gridParams.rows,
-      gridParams.squares,
-      gridParams.dpr
-    );
-  }, [color]);
-
   const memoizedColor = useMemo(() => {
     const toRGBA = (color) => {
       if (typeof window === "undefined") {
