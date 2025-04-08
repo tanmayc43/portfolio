@@ -5,7 +5,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
+    <header className="top-0 left-0 right-0 z-50">
       <div className="mx-auto max-w-screen-xl px-4 py-4 md:py-5 md:px-8 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="text-2xl font-bold text-white">
@@ -14,19 +14,28 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-x-8">
-          <a href="#about" className="text-xl font-bold hover:text-primary text-white">
+          <a
+            href="#about"
+            className="text-xl font-bold hover:text-primary text-white"
+          >
             About
           </a>
-          <a  
+          <a
             href="#projects"
             className="text-xl font-bold  hover:text-primary text-white"
           >
             Projects
           </a>
-          <a href="#skills" className="text-xl font-bold hover:text-primary text-white">
+          <a
+            href="#skills"
+            className="text-xl font-bold hover:text-primary text-white"
+          >
             Skills
           </a>
-          <a href="#contact" className="text-xl font-bold hover:text-primary text-white">
+          <a
+            href="#contact"
+            className="text-xl font-bold hover:text-primary text-white"
+          >
             Contact
           </a>
         </nav>

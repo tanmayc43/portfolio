@@ -4,33 +4,32 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full pt-20 md:pt-32 lg:pt-40 xl:pt-48 min-h-[80vh]">
+    <section className="relative w-full pt-20 md:pt-32 lg:pt-40 xl:pt-36 min-h-[80vh] md:mb-15">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
-          {/* Text Content */}
-          <div className="flex-1 space-y-6">
+        <div className="flex flex-col items-center justify-center">
+          <div className="w-full max-w-2xl space-y-6 text-center">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-              <span className="text-white">Hey there,</span>
+              <span className="text-white">Hey there, </span>
               <br />
-              <span className="text-white"> I'm</span>
+              <span className="text-white">I'm</span>
               <span
                 className="text-blue-600 font-bold"
                 style={{ fontFamily: "'Inter'" }}
               >
-                {" "}
+                {" "} 
                 Tanmay
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl font-light text-white max-w-[600px]">
+            <p className="text-xl md:text-2xl font-light text-white max-w-[600px] mx-auto">
               Full-stack developer, CS Sophomore <br /> and an AI/ML enthusiast
             </p>
 
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap gap-4 pt-4 justify-center">
               <button>
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-md font-bold text-primary-foreground shadow hover:bg-white hover:text-black transition:all duration-300 ease-in-out"
+                  className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-md font-bold text-primary-foreground shadow hover:bg-white hover:text-black transition-all duration-300 ease-in-out"
                 >
                   Get in touch
                   <svg
@@ -53,19 +52,19 @@ export default function Hero() {
               <button>
                 <a
                   href="#projects"
-                  className="inline-flex items-center justify-center rounded-md border border-input bg-white px-6 py-3 text-md font-bold shadow-sm hover:bg-gray-300 transition:all duration-300 ease-in-out"
+                  className="inline-flex items-center justify-center rounded-md border border-input bg-white px-6 py-3 text-md font-bold shadow-sm hover:bg-gray-300 transition-all duration-300 ease-in-out"
                 >
                   View projects
                 </a>
               </button>
             </div>
 
-            <div className="pt-6 flex items-center space-x-4">
+            <div className="pt-6 flex items-center justify-center space-x-4">
               <a
                 href="https://github.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full bg-secondary text-foreground hover:text-primary"
+                className="p-2 rounded-full bg-secondary text-foreground hover:text-primary transition-colors duration-300"
                 aria-label="GitHub"
               >
                 <svg
@@ -88,7 +87,7 @@ export default function Hero() {
                 href="https://linkedin.com/in/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full bg-secondary text-foreground hover:text-primary"
+                className="p-2 rounded-full bg-secondary text-foreground hover:text-primary transition-colors duration-300"
                 aria-label="LinkedIn"
               >
                 <svg
@@ -112,7 +111,7 @@ export default function Hero() {
                 href="https://twitter.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full bg-secondary text-foreground hover:text-primary"
+                className="p-2 rounded-full bg-secondary text-foreground hover:text-primary transition-colors duration-300"
                 aria-label="Twitter"
               >
                 <svg
