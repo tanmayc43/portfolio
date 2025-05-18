@@ -6,21 +6,21 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border py-8 mt-16">
+    <footer className=" py-8 mt-16">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-white">
               © {currentYear} tyci. All rights reserved.
             </p>
           </div>
 
           <div className="flex space-x-6">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/tanmayc43"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="text-muted-foreground hover:text-white transition-colors"
               aria-label="GitHub"
             >
               <svg
@@ -40,32 +40,10 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://twitter.com/yourusername"
+              href="https://linkedin.com/in/tanmay43"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="Twitter"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-              </svg>
-            </a>
-
-            <a
-              href="https://linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="text-muted-foreground hover:text-white transition-colors"
               aria-label="LinkedIn"
             >
               <svg
@@ -88,7 +66,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-4 text-center md:text-left">
-          <p className="text-xs text-muted-foreground">
+          <p className="text-xs text-white">
             Built with React & Tailwind
           </p>
         </div>

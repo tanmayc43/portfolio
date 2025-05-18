@@ -12,18 +12,8 @@ export default function About() {
 
           <div className="max-w-4xl w-full">
             {/* Card Container */}
-            <div className="bg-secondary/30 backdrop-blur-sm rounded-xl shadow-xl overflow-hidden border border-secondary/50 hover:border-primary/50 transition-all duration-300">
+            <div className="bg-[#18181b] backdrop-blur-sm rounded-xl shadow-xl overflow-hidden border border-secondary/50 hover:border-primary/50 transition-all duration-300">
               <div className="flex flex-col md:flex-row items-center justify-center">
-                {/* Image Section */}
-                {/* <div className="md:w-1/3 relative overflow-hidden">
-                  <img
-                    src="/src/assets/profile-pic.png"
-                    alt="Tanmay"
-                    className="w-full h-full object-cover object-center"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent md:bg-gradient-to-r"></div>
-                </div> */}
-
                 {/* Content Section */}
                 <div className="md:w-2/3 p-6 md:p-8 flex flex-col justify-center">
                   <h3 className="text-2xl font-bold text-white mb-3">Tanmay</h3>

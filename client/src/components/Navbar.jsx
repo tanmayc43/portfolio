@@ -16,25 +16,19 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-x-8">
           <a
             href="#about"
-            className="text-xl font-bold hover:text-primary text-white"
+            className="text-xl font-bold hover:text-blue-600 text-white"
           >
             About
           </a>
           <a
             href="#projects"
-            className="text-xl font-bold  hover:text-primary text-white"
+            className="text-xl font-bold  hover:text-blue-600 text-white"
           >
             Projects
           </a>
           <a
-            href="#skills"
-            className="text-xl font-bold hover:text-primary text-white"
-          >
-            Skills
-          </a>
-          <a
             href="#contact"
-            className="text-xl font-bold hover:text-primary text-white"
+            className="text-xl font-bold hover:text-blue-600 text-white"
           >
             Contact
           </a>
@@ -95,13 +89,6 @@ export default function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Projects
-              </a>
-              <a
-                href="#skills"
-                className="text-lg font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Skills
               </a>
               <a
                 href="#contact"

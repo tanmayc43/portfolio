@@ -51,20 +51,22 @@ export default function Hero() {
               </button>
               <button>
                 <a
-                  href="#projects"
-                  className="inline-flex items-center justify-center rounded-md border border-input bg-white px-6 py-3 text-md font-bold shadow-sm hover:bg-gray-300 transition-all duration-300 ease-in-out"
+                  href="/assets/Tanmay_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-md font-bold shadow-sm hover:bg-blue-600 hover:text-white transition-all duration-300 ease-in-out"
                 >
-                  View projects
+                  Resume
                 </a>
               </button>
             </div>
 
             <div className="pt-6 flex items-center justify-center space-x-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/tanmayc43"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full bg-secondary text-foreground hover:text-primary transition-colors duration-300"
+                className="p-2 rounded-full bg-secondary text-foreground hover:text-primary transition-ease-in-out duration-300 will-change-transform hover:scale-115 "
                 aria-label="GitHub"
               >
                 <svg
@@ -84,10 +86,10 @@ export default function Hero() {
               </a>
 
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/tanmay43"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full bg-secondary text-foreground hover:text-primary transition-colors duration-300"
+                className="p-2 rounded-full bg-secondary text-foreground hover:text-primary transition-ease-in-out duration-300 will-change-transform hover:scale-115"
                 aria-label="LinkedIn"
               >
                 <svg
@@ -108,25 +110,19 @@ export default function Hero() {
               </a>
 
               <a
-                href="https://twitter.com/yourusername"
+                href="https://leetcode.com/tanmay43"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full bg-secondary text-foreground hover:text-primary transition-colors duration-300"
-                aria-label="Twitter"
+                className="p-2 rounded-full bg-secondary text-foreground hover:text-primary transition-ease-in-out duration-300 will-change-transform hover:scale-115"
+                aria-label="Leetcode"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                </svg>
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="Leetcode--Streamline-Simple-Icons" height="24" width="24">
+  <desc>
+    Leetcode Streamline Icon: https://streamlinehq.com
+  </desc>
+  <title>LeetCode</title>
+  <path d="M13.483 0a1.374 1.374 0 0 0 -0.961 0.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0 -1.209 2.104 5.35 5.35 0 0 0 -0.125 0.513 5.527 5.527 0 0 0 0.062 2.362 5.83 5.83 0 0 0 0.349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193 0.039 0.038c2.248 2.165 5.852 2.133 8.063 -0.074l2.396 -2.392c0.54 -0.54 0.54 -1.414 0.003 -1.955a1.378 1.378 0 0 0 -1.951 -0.003l-2.396 2.392a3.021 3.021 0 0 1 -4.205 0.038l-0.02 -0.019 -4.276 -4.193c-0.652 -0.64 -0.972 -1.469 -0.948 -2.263a2.68 2.68 0 0 1 0.066 -0.523 2.545 2.545 0 0 1 0.619 -1.164L9.13 8.114c1.058 -1.134 3.204 -1.27 4.43 -0.278l3.501 2.831c0.593 0.48 1.461 0.387 1.94 -0.207a1.384 1.384 0 0 0 -0.207 -1.943l-3.5 -2.831c-0.8 -0.647 -1.766 -1.045 -2.774 -1.202l2.015 -2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0 -1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38 -1.382 1.38 1.38 0 0 0 -1.38 -1.382z" fill="#000000" stroke-width="1"></path>
+</svg>
               </a>
             </div>
           </div>
