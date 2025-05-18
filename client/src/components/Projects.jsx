@@ -10,25 +10,25 @@ import settleupImg from "../assets/settle-up.png";
 const projects = [
   {
     title: "SettleUp (ongoing)",
-    description: "Description for SettleUp.",
+    description: "SettleUp is a web app for easy shared expense tracking and group bill management. It features real-time splitting, balance tracking, and settlements. Built with Next.js and PostgreSQL for a full-stack, reliable experience.",
     image: settleupImg,
     github: "https://github.com/tanmayc43/settle-up",
   },
   {
     title: "CropCredit",
-    description: "Description for project one.",
+    description: "Crop Credit is a web app that helps farmers access credit by analyzing crop and financial data. It uses a predictive model for risk evaluation and loan recommendations. Built with Next.js and PostgreSQL for a smooth and secure experience.",
     image: cropcreditImg,
     github: "https://github.com/VemorPhose/CropCredit",
   },
   {
     title: "Smart Lunar Lander",
-    description: "Description for project two.",
+    description: "An AI agent trained using the PPO algorithm to efficiently land on the lunar surface. It demonstrates optimized control and decision-making in a simulated environment. Built with Python and reinforcement learning frameworks for training and evaluation.",
     image: lunarlanderImg,
     github: "https://github.com/tanmayc43/lunar-lander",
   },
   {
     title: "Portfolio",
-    description: "Description for project four.",
+    description: "A responsive portfolio website showcasing projects and skills, built with React and styled using Tailwind CSS v4 for a modern, clean design.",
     image: portfolioImg,
     github: "https://github.com/tanmayc43/portfolio",
   },
@@ -79,7 +79,7 @@ export default function Projects() {
               </a>
             )}
           </div>
-          <p className="text-lg text-gray-300 group-hover:text-gray-700 text-center transition-colors duration-300">
+          <p className="text-lg text-gray-300 group-hover:text-gray-700 text-left transition-colors duration-300">
             {project.description}
           </p>
         </MagicCard>
