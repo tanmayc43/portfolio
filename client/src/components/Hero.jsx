@@ -51,7 +51,7 @@ export default function Hero() {
               </button>
               <button>
                 <a
-                  href="/assets/Tanmay_Resume.pdf"
+                  href="portfolio/assets/Tanmay_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-md font-bold shadow-sm hover:bg-blue-600 hover:text-white transition-all duration-300 ease-in-out"
