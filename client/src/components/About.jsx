@@ -16,14 +16,12 @@ export default function About() {
               <div className="flex flex-col md:flex-row items-center justify-center">
                 {/* Content Section */}
                 <div className="md:w-2/3 p-6 md:p-8 flex flex-col justify-center">
-                  <h3 className="text-2xl font-bold text-white mb-3">Tanmay</h3>
+                  <h3 className="text-2xl font-bold text-white mb-3">Hey There,</h3>
                   <p className="text-white/80 mb-4">
-                    I'm a passionate Full-Stack Developer and Computer Science
-                    sophomore with a strong interest in AI/ML technologies. I
-                    enjoy solving complex problems and building intuitive,
-                    user-friendly applications.
+                    I'm a Full-Stack Developer and currently a Computer Science junior at the Indian Institute of Information Technology, Guwahati, with a strong interest in artificial intelligence and machine learning. <br/> <br/>
+                    I try to build stuff that fixes the problems in my life, ones that are fixable by code.  
                   </p>
-                  <div className="grid grid-cols-2 gap-y-3 gap-x-2 text-sm text-white/70 mb-6">
+                  {/* <div className="grid grid-cols-2 gap-y-3 gap-x-2 text-sm text-white/70 mb-6">
                     <div className="flex items-center gap-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +105,7 @@ export default function About() {
                       </svg>
                       <span>Problem Solver</span>
                     </div>
-                  </div>{" "}
+                  </div>{" "} */}
                   <h4 className="text-lg font-medium text-white mb-3">
                     Tech Stack
                   </h4>
