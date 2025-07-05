@@ -4,21 +4,21 @@ import React from "react";
 import { MagicCard } from "./magicui/magic-card";
 import cropcreditImg from "../assets/crop-credit.png";
 import lunarlanderImg from "../assets/lunar-lander.gif";
-import portfolioImg from "../assets/portfolio.png";
-import settleupImg from "../assets/settle-up.png";
+import snipsortImg from "../assets/snipsort.png";
+import tciyImg from "../assets/tciy.png";
 
 const projects = [
   {
-    title: "SettleUp (ongoing)",
-    description: "SettleUp is a web app for easy shared expense tracking and group bill management. It features real-time splitting, balance tracking, and settlements. Built with Next.js and PostgreSQL for a full-stack, reliable experience.",
-    image: settleupImg,
-    github: "https://github.com/tanmayc43/settle-up",
+    title: "TheChoiceIsYours(ongoing)",
+    description: "An opinionated movie-picker for indecisive cinephiles with a cinematic Matrix theme. Features Go backend with web scraping, AI recommendations via Google Gemini, and building a custom model for better recommendations. Immersive React frontend with Three.js effects.",
+    image: tciyImg,
+    github: "https://github.com/tanmayc43/thechoiceisyours",
   },
   {
-    title: "CropCredit",
-    description: "Crop Credit is a web app that helps farmers access credit by analyzing crop and financial data. It uses a predictive model for risk evaluation and loan recommendations. Built with Next.js and PostgreSQL for a smooth and secure experience.",
-    image: cropcreditImg,
-    github: "https://github.com/VemorPhose/CropCredit",
+    title: "SnipSort",
+    description: "A code snippet manager for organizing, sharing, and managing reusable code fragments. Built with React, Tailwind CSS, and shadcn/ui, featuring Docker-containerized Express backend with PostgreSQL and secure JWT authentication.",
+    image: snipsortImg,
+    github: "https://github.com/tanmayc43/snipsort",
   },
   {
     title: "Smart Lunar Lander",
@@ -27,11 +27,11 @@ const projects = [
     github: "https://github.com/tanmayc43/lunar-lander",
   },
   {
-    title: "Portfolio",
-    description: "A responsive portfolio website showcasing projects and skills, built with React and styled using Tailwind CSS v4 for a modern, clean design.",
-    image: portfolioImg,
-    github: "https://github.com/tanmayc43/portfolio",
-  },
+    title: "CropCredit",
+    description: "Crop Credit is a web app that helps farmers access credit by analyzing crop and financial data. It uses a predictive model for risk evaluation and loan recommendations. Built with Next.js and PostgreSQL for a smooth and secure experience.",
+    image: cropcreditImg,
+    github: "https://github.com/VemorPhose/CropCredit",
+  }
 ];
 
 export default function Projects() {
